@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Roboto Slab";
+}
+body{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* nav bar section */
+.navbar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 8%;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 0.5px solid #2e2f2e17;
+
+}
+.logo-area{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #0DB75F;
+    font-weight:900;
+
+}
+.logo-area img{
+    width: 25%;
+    height:100%;
+}
+.nav-link{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-link a{
+    text-decoration: none;
+    font-size: 99%;
+    color:#2E2F2E;
+    padding: 7px 15px;
+    transition: 0.45s ease-in;
+    
+}
+.nav-link a:hover{
+    background-color: #0DB75F;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.378);
+    color: white;
+    font-weight: 600;
+}
+.nav-btn{
+    width:10%;
+    height: 90%;
+    border: 2px solid #0DB75F;
+    border-radius:5px;
+}
+.nav-btn:hover{
+    cursor: pointer;
+    background-color: #0DB75F;
+    color: white;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.362);
+    transition: 0.50s ease-in-out;
+    font-weight: 900;
+}
+
+
+/* personal information section */
+
+.hero-area{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80%;
+    padding: 5%;
+    justify-content: space-between;
+
+}
+.hero-left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 8% 2%;
+    justify-content: space-between;
+}
+.hero-left h5{
+    color: #0DB75F;
+    font-weight: 900;
+}
+.hero-left h1 span{
+    color: #0DB75F;
+}
+.hero-left h1{
+    font-size: 2.8rem;
+}
+.hero-left h4{
+    color:#2E2F2E;
+}
+.contact-link{
+     display: flex;
+     flex-direction: row;
+     width: 30%;
+     height: 20%;
+     align-items: center;
+     justify-content: space-around;
+}
+.contact-link i{
+    font-size: 1.5rem;
+    color: #2E2F2E;
+    
+}
+.contact-link i:hover{
+    cursor: pointer;
+    color: #0DB75F;
+    transition: 0.45s ease-in-out;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.256);
+}
+.hero-btns{
+    width: 50%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.hero-btns button{
+    width: 45%;
+    height: 90%;
+    border: 2px solid #0DB75F;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.btn-one{
+     background-color: #0DB75F;
+     color: white;
+     font-weight: 600;
+     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.281);
+}
+.btn-one:hover{
+    background-color: white;
+    color: #2E2F2E;
+    border: 2px solid #0DB75F;
+    transition: 0.45s ease-in-out;
+}
+.btn-two{
+    color: #2E2F2E;
+    font-weight: 600;
+}
+.btn-two:hover{
+    background-color: #0DB75F;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.281);
+    color:white;
+    transition: 0.45s ease-in-out;
+}
+.hero-right{
+    width: 40%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inner-box{
+    width: 65%;
+    height: 80%;
+    background-color: #0DB75F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 5px 10px #0db75f58;
+    
+    
+}
+.inner{
+    width: 93%;
+    height: 93%;
+    background: url("./img/hero.jpg");
+    background-position: center;
+    background-size: cover;
+
+}
+.outer-box{
+    position: absolute;
+    width: 65%;
+    height: 80%;
+    border:10px double #1b0db7;
+    box-shadow: 2px 2px 4px 6px #2e2f2e4e;
+    animation: circle 11s infinite;
+}
+.outer-in-box{
+    position: absolute;
+    width: 65%;
+    height: 80%;
+    border:10px double #b70dac;
+    box-shadow: 2px 2px 4px 6px #2e2f2e4e;
+    animation: circle 17s infinite;
+}
+
+@keyframes circle{
+    
+    0%{
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+}
+
+
+/* certificate */
+
