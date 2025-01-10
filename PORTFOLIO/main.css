@@ -629,16 +629,145 @@ body{
 
 
 
-.ui-ux-peoject-section{
-    height: 16%;
-    background-color: #b70d54;
+/* internship section */
+
+.intership-section{
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2%;
 }
+.intern-one{
+    width: 90%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5%;
+    padding: 1%;
+}
+.intership-section h1{
+    color: #0DB75F;
+    font-size: 1.7rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.195);
+}
+.intern-btn{
+    width: 10%;
+    height: 10%;
+    background-color: #0DB75F;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    font-weight: 600;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.208);
+}
+.intern-btn:hover{
+        border: 3px solid #0DB75F;
+        background-color: white;
+        color:#2E2F2E;
+        transition: 0.50s ease-in-out;
+    
+}
+.intern-one-img{
+    width: 30%;
+    height: 95%;
+    background: url("./img/intern2.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    border: 10px solid #0DB75F;
+    
+}
+.intership-section:hover .intern-one-img{
+    animation: about_move1 1s linear;
+}
+.intership-section:hover .intern-two-img{
+    animation: about_move2 1s linear;
+}
+.intership-section:hover .intern-one-paragraph{
+    animation: about_move2 1s linear;
+}
+.intership-section:hover .intern-two-paragraph{
+    animation: about_move1 1s linear;
+}
+.intership-section:hover h1{
+    animation: trans 1s linear;
+}
+.intern-one-paragraph{
+    width: 50%;
+    height: 95%;
+    text-align: center;
+}
+
+.intern-two{
+    width: 90%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5%;
+    padding: 1%;
+}
+.intern-two-img{
+    width: 30%;
+    height: 95%;
+    background: url("./img/intern1.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    border: 10px solid #0DB75F;
+}
+.intern-two-paragraph{
+    width: 50%;
+    height: 95%;
+    text-align: center;
+}
+span{
+    color: #0DB75F;
+}
+
+@keyframes about_move1{
+    0%{
+          transform: translateX(-50%);
+          opacity: 0;
+    }
+    100%{
+         transform: translateX(0);
+         opacity: 1;
+    }
+}
+
+@keyframes about_move2{
+    0%{
+          transform: translateX(50%);
+          opacity: 0;
+    }
+    100%{
+         transform: translateX(0);
+         opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
 .certificate-section{
     height: 16%;
     background-color: #0db721;
 }
-.intership-section{
-    height: 15%;
+.ui-ux-peoject-section{
+    height: 16%;
     background-color: #b1b70d;
 }
 .footer-section{
