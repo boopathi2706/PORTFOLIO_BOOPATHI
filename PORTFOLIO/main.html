@@ -6,17 +6,18 @@
     <title>BOOPATHI V</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="./img/Screenshot 2025-01-10 003432.png">
+    <link rel="icon" href="./img/logo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 </head>
 <body>
     <nav class="navbar">
             <div class="logo-area">
-                <img src="./img/Screenshot 2025-01-10 003432.png" alt="">
+                <img src="./img/logo.png" alt="">
                 <h3>OOPATHI</h3>
             </div>
             <div class="nav-link">
                 <a href="">HOME</a>
-                <a href="">ABOUT</a>
+                <a href="">ABOUT US</a>
                 <a href="">PROJECT'S</a>
                 <a href="">INTERN</a>
                 <a href="">CERTIFICATE'S</a>
@@ -24,6 +25,10 @@
             <button class="nav-btn">
                 CONTACT US
             </button>
+            <p onclick="toggleIcon(this)" class="brightness">
+                <span class="material-symbols-outlined">light_mode</span>
+            </p>
+
     </nav>
     <section class="hero-area">
            <div class="hero-left">
@@ -67,16 +72,98 @@
 
     <!-- project and certificate count section -->
 
-    <section class="count-section">
-           <div class="fullstack-project-count">
-                <h2 class="fullstack-count"><span>+</span></h2>
+    <section class="count-section" id="count-section">
+        <div class="fullstack-project-count count-area">
+            <h2 class="fullstack-count" id="fullstack-count">0<span>+</span></h2>
+            <h4>FULL STACK PROJECT</h4>
+        </div>
+        <div class="ui-ux-project-count count-area">
+            <h2 class="ui-ux-count" id="ui-ux-count">0<span>+</span></h2>
+            <h4>UI / UX PROJECT</h4>
+        </div>
+        <div class="certificate-count count-area">
+            <h2 class="certificates-count" id="certificate-count">0<span>+</span></h2>
+            <h4>TOTAL CERTIFICATE'S</h4>
+        </div>
+        <div class="intern-count count-area">
+            <h2 class="internship-count" id="intern-count">0<span>+</span></h2>
+            <h4>TOTAL INTERNSHIP</h4>
+        </div>
+    </section>
+
+
+    <!-- about us section -->
+    <section class="about-us-section">
+           <div class="about-left">
+                <div class="about-left-one">
+                     <div class="image1">
+
+                     </div>
+                </div>
+                <div class="about-left-two">
+                    <div class="image2">
+
+                    </div>
+
+                </div>
+                <div class="about-left-three">
+                     <div class="image3">
+
+                     </div>
+                </div>
            </div>
-           <div class="ui/ux-peoject-count">
-                <h2 class="fullstack-count"><span>+</span></h2>
-           </div>
-           <div class="certificate-count">
-                <h2 class="certificate-count"><span>+</span></h2>
+           <div class="about-right">
+                  <h1 class="about-title">ABOUT US</h1>
+                  <p class="about-paragraph">
+                    <span style="color: #0DB75F;font-size: 1.2rem;">Boopathi Vijayan</span>  is a dedicated Computer Science and Engineering student with a CGPA of 8.20 from Sri Eshwar College of Engineering. Skilled in front-end development and UI/UX design, Boopathi has worked on notable projects like "MarioJuicy," a React-based food ordering app, and a Spotify clone using HTML, CSS, and JavaScript. With certifications in Java, C++, Python, and web development, they have a strong technical foundation. During their internship at UnifiedMentor, Boopathi honed skills in creating user-friendly web interfaces. Proficient in tools like Figma, VS Code, and Git, they are passionate about problem-solving and delivering impactful tech solutions.
+                  </p>
+                  <button class="about-btn">View More</button>
            </div>
     </section>
+
+
+
+<!-- skill section -->
+
+    <section class="skill-section">
+           <h1 class="skill-title">My Skill's</h1>
+           <div class="skill-container">
+                <div class="skill skill-one"></div>
+                <div class="skill skill-two"></div>
+                <div class="skill skill-three"></div>
+                <div class="skill skill-four"></div>
+                <div class="skill skill-five"></div>
+                <div class="skill skill-six"></div>
+                <div class="skill skill-seven"></div>
+                <div class="skill skill-eight"></div>
+                <div class="skill skill-nine"></div>
+                <div class="skill skill-ten"></div>
+                <div class="skill skill-ten-1"></div>
+           </div>
+           <button class="skill-button">
+               View More
+           </button>
+    </section>
+
+
+
+
+
+
+    <section class="ui-ux-peoject-section">
+
+    </section>
+
+    <section class="certificate-section">
+
+    </section>
+
+    <section class="intership-section">
+
+    </section>
+    <footer class="footer-section">
+
+    </footer>
+    <script src="main.js"></script>
 </body>
 </html>
