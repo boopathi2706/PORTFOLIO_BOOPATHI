@@ -5,6 +5,10 @@
     box-sizing: border-box;
     font-family:"Roboto Slab";
 }
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     height:600vh;
     display: flex;
@@ -21,6 +25,9 @@ body{
     align-items: center;
     justify-content: space-around;
     border-bottom: 0.5px solid #2e2f2e17;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 
 }
 .logo-area{
@@ -728,7 +735,10 @@ body{
     height: 95%;
     text-align: center;
 }
-span{
+.intern-one-paragraph span{
+    color: #0DB75F;
+}
+.intern-two-paragraph span{
     color: #0DB75F;
 }
 
@@ -757,20 +767,662 @@ span{
 
 
 
+/* project section */
 
 
+.peoject-section{
+    height: 16%;
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    align-items: center;
+    justify-content: space-around;
+}
+.project-title{
+    color: #0DB75F;
+    font-size: 1.7rem;
+}
+.peoject-section:hover .project-title{
+    animation: trans 1s linear;
+}
+.project_container{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    gap: 2%;
+    align-items: center;
+    justify-content: space-around;
+}
+.projects{
+    width: 23%;
+    height: 40%;
+    background-color: #b70dac;
+}
+.project-btn{
+    width:10%;
+    height: 8%;
+    border: none;
+    background-color: #0DB75F;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: white;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.263);
+}
+.project-btn:hover{
+    border: 3px solid #0DB75F;
+    background-color: white;
+    color:#2E2F2E;
+    transition: 0.50s ease-in-out;
+
+}
+.pro-one {
+    background: url("/img/project1.png");
+    background-position: center;
+    background-size: cover;
+    border: 5px solid #0DB75F;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.peoject-section:hover .pro-one{
+    animation: project_ani1 1s linear;
+}
+.pro-one p{
+    opacity: 0;
+}
+
+.pro-one:hover p{
+    background-color: #0DB75F;
+    color: white;
+    padding: 7px 15px;
+    opacity: 1;
+    border-radius: 5px;
+    transition: 0.45s ease-in-out;
+    
+}
+.pro-two{
+    background: url("/img/project2.png");
+    background-position: center;
+    background-size: cover;
+    border: 5px solid #0DB75F;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.peoject-section:hover .pro-two{
+    animation: project_ani1 1s linear;
+}
+.pro-two p{
+    opacity: 0;
+}
+
+.pro-two:hover p{
+    background-color: #0DB75F;
+    color: white;
+    padding: 7px 15px;
+    opacity: 1;
+    border-radius: 5px;
+    transition: 0.45s ease-in-out;
+    
+}
+
+
+.pro-three{
+    background: url("/img/project3.png");
+    background-position: center;
+    background-size: cover;
+    border: 5px solid #0DB75F;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.peoject-section:hover .pro-three{
+    animation: project_ani1 1s linear;
+}
+.pro-three p{
+    opacity: 0;
+}
+
+.pro-three:hover p{
+    background-color: #0DB75F;
+    color: white;
+    padding: 7px 15px;
+    opacity: 1;
+    border-radius: 5px;
+    transition: 0.45s ease-in-out;
+    
+}
+.pro-four{
+    background: url("/img/project4.png");
+    background-position: center;
+    background-size: cover;
+    border: 5px solid #0DB75F;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.peoject-section:hover .pro-four{
+    animation: project_ani1 1s linear;
+}
+.pro-four p{
+    opacity: 0;
+}
+
+.pro-four:hover p{
+    background-color: #0DB75F;
+    color: white;
+    padding: 7px 15px;
+    opacity: 1;
+    border-radius: 5px;
+    transition: 0.45s ease-in-out;
+    
+}
+
+
+.pro-five{
+    background: url("/img/project5.png");
+    background-position: center;
+    background-size: cover;
+    border: 5px solid #0DB75F;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.peoject-section:hover .pro-five{
+    animation: project_ani2 1s linear;
+}
+.pro-five p{
+    opacity: 0;
+}
+
+.pro-five:hover p{
+    background-color: #0DB75F;
+    color: white;
+    padding: 7px 15px;
+    opacity: 1;
+    border-radius: 5px;
+    transition: 0.45s ease-in-out;
+    
+}
+
+
+.pro-six{
+    background: url("/img/project6.png");
+    background-position: center;
+    background-size: cover;
+    border: 5px solid #0DB75F;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.peoject-section:hover .pro-six{
+    animation: project_ani2 1s linear;
+}
+.pro-six p{
+    opacity: 0;
+}
+
+.pro-six:hover p{
+    background-color: #0DB75F;
+    color: white;
+    padding: 7px 15px;
+    opacity: 1;
+    border-radius: 5px;
+    transition: 0.45s ease-in-out;
+    
+}
+
+
+.pro-seven{
+    background: url("/img/project7.png");
+    background-position: center;
+    background-size: cover;
+    border: 5px solid #0DB75F;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.peoject-section:hover .pro-seven{
+    animation: project_ani2 1s linear;
+}
+.pro-seven p{
+    opacity: 0;
+}
+
+.pro-seven:hover p{
+    background-color: #0DB75F;
+    color: white;
+    padding: 7px 15px;
+    opacity: 1;
+    border-radius: 5px;
+    transition: 0.45s ease-in-out;
+    
+}
+
+
+.pro-eight{
+    background: url("/img/project8.png");
+    background-position: center;
+    background-size: cover;
+    border: 5px solid #0DB75F;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+.peoject-section:hover .pro-eight{
+    animation: project_ani2 1s linear;
+}
+.pro-eight p{
+    opacity: 0;
+}
+
+.pro-eight:hover p{
+    background-color: #0DB75F;
+    color: white;
+    padding: 7px 15px;
+    opacity: 1;
+    border-radius: 5px;
+    transition: 0.45s ease-in-out;
+    
+}
+@keyframes project_ani1{
+    0%{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes project_ani2{
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+/* certificate section */
 
 
 
 .certificate-section{
     height: 16%;
-    background-color: #0db721;
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    align-items: center;
+    justify-content: space-around;
 }
-.ui-ux-peoject-section{
-    height: 16%;
-    background-color: #b1b70d;
+.certificate-title{
+    color: #0DB75F;
+    font-size: 1.7rem;
 }
+.certificate-section:hover .certificate-title{
+    animation: trans 1s linear;
+}
+.certificate_container{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    gap: 2%;
+    align-items: center;
+    justify-content: space-around;
+}
+.certificate{
+    width: 23%;
+    height: 40%;
+    background-color: #b70dac;
+}
+.certificate-btn{
+    width:10%;
+    height: 8%;
+    border: none;
+    background-color: #0DB75F;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: white;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.263);
+}
+.certificate-btn:hover{
+    border: 3px solid #0DB75F;
+    background-color: white;
+    color:#2E2F2E;
+    transition: 0.50s ease-in-out;
+
+}
+.cert-one {
+    background: url("/img/certi1.png");
+    background-position: center;
+    background-size: cover;
+    border: 5px solid #0DB75F;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.certificate-section:hover .cert-one{
+    animation: certificate_ani1 1s linear;
+}
+.cert-one p{
+    opacity: 0;
+}
+
+.cert-one:hover p{
+    background-color: #0DB75F;
+    color: white;
+    padding: 7px 15px;
+    opacity: 1;
+    border-radius: 5px;
+    transition: 0.45s ease-in-out;
+    
+}
+
+.cert-two {
+    background: url("/img/certi2.png");
+    background-position: center;
+    background-size: cover;
+    border: 5px solid #0DB75F;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.certificate-section:hover .cert-two{
+    animation: certificate_ani1 1s linear;
+}
+.cert-two p{
+    opacity: 0;
+}
+
+.cert-two:hover p{
+    background-color: #0DB75F;
+    color: white;
+    padding: 7px 15px;
+    opacity: 1;
+    border-radius: 5px;
+    transition: 0.45s ease-in-out;
+    
+}
+
+.cert-three{
+    background: url("/img/certi3.png");
+    background-position: center;
+    background-size: cover;
+    border: 5px solid #0DB75F;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.certificate-section:hover .cert-three{
+    animation: certificate_ani2 1s linear;
+}
+.cert-three p{
+    opacity: 0;
+}
+
+.cert-three:hover p{
+    background-color: #0DB75F;
+    color: white;
+    padding: 7px 15px;
+    opacity: 1;
+    border-radius: 5px;
+    transition: 0.45s ease-in-out;
+    
+}
+.cert-four{
+    background: url("/img/certi4.png");
+    background-position: center;
+    background-size: cover;
+    border: 5px solid #0DB75F;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.certificate-section:hover .cert-four{
+    animation: certificate_ani2 1s linear;
+}
+.cert-four p{
+    opacity: 0;
+}
+
+.cert-four:hover p{
+    background-color: #0DB75F;
+    color: white;
+    padding: 7px 15px;
+    opacity: 1;
+    border-radius: 5px;
+    transition: 0.45s ease-in-out;
+    
+}
+
+
+.cert-five{
+    background: url("/img/certi5.png");
+    background-position: center;
+    background-size: cover;
+    border: 5px solid #0DB75F;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.certificate-section:hover .cert-five{
+    animation: certificate_ani1 1s linear;
+}
+.cert-five p{
+    opacity: 0;
+}
+
+.cert-five:hover p{
+    background-color: #0DB75F;
+    color: white;
+    padding: 7px 15px;
+    opacity: 1;
+    border-radius: 5px;
+    transition: 0.45s ease-in-out;
+    
+}
+
+
+.cert-six{
+    background: url("/img/certi6.png");
+    background-position: center;
+    background-size: cover;
+    border: 5px solid #0DB75F;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.certificate-section:hover .cert-six{
+    animation: certificate_ani1 1s linear;
+}
+.cert-six p{
+    opacity: 0;
+}
+
+.cert-six:hover p{
+    background-color: #0DB75F;
+    color: white;
+    padding: 7px 15px;
+    opacity: 1;
+    border-radius: 5px;
+    transition: 0.45s ease-in-out;
+    
+}
+
+
+.cert-seven{
+    background: url("/img/certi7.png");
+    background-position: center;
+    background-size: cover;
+    border: 5px solid #0DB75F;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.certificate-section:hover .cert-seven{
+    animation: certificate_ani2 1s linear;
+}
+.cert-seven p{
+    opacity: 0;
+}
+
+.cert-seven:hover p{
+    background-color: #0DB75F;
+    color: white;
+    padding: 7px 15px;
+    opacity: 1;
+    border-radius: 5px;
+    transition: 0.45s ease-in-out;
+    
+}
+
+
+.cert-eight{
+    background: url("/img/certi8.png");
+    background-position: center;
+    background-size: cover;
+    border: 5px solid #0DB75F;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+.certificate-section:hover .cert-eight{
+    animation: certificate_ani2 1s linear;
+}
+.cert-eight p{
+    opacity: 0;
+}
+
+.cert-eight:hover p{
+    background-color: #0DB75F;
+    color: white;
+    padding: 7px 15px;
+    opacity: 1;
+    border-radius: 5px;
+    transition: 0.45s ease-in-out;
+    
+}
+@keyframes certificate_ani1{
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes certificate_ani2{
+    0%{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .footer-section{
     height: 2%;
-    background-color: #b7400d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0DB75F;
+    justify-content: center;
+
+}
+.footer-link{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+}
+.footer-link i{
+   font-size: 1.6rem;
+}
+.footer-link i:hover{
+    color: white;
+    transition: 0.45s ease-in-out;
+    cursor: pointer;
+}
+.redirct{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.redirct p a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #2E2F2E;
+}
+.redirct p a:hover{
+    color: white;
+    transition: 0.45s ease-in-out;
+}
+.redirct p span{
+    color:#2E2F2E ;
+}
+.end{
+    color: #2E2F2E;
 }

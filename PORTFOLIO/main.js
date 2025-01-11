@@ -40,3 +40,14 @@ function toggleIcon(element) {
         span.textContent = "light_mode"; // Change to sun icon
     }
 }
+
+
+
+document.getElementById('downloadBtn').addEventListener('click', () => {
+    const link = document.createElement('a');
+    link.href = './img/BOOPATHI_V(RESUME).pdf'; // Replace with your PDF file path
+    link.download = 'BOOPATHI_VIJAYAN(RESUME).pdf'; // Optional: set the file name
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+});

@@ -16,11 +16,11 @@
                 <h3>OOPATHI</h3>
             </div>
             <div class="nav-link">
-                <a href="">HOME</a>
-                <a href="">ABOUT US</a>
-                <a href="">PROJECT'S</a>
-                <a href="">INTERN</a>
-                <a href="">CERTIFICATE'S</a>
+                <a href="#hero-area">HOME</a>
+                <a href="#about">ABOUT US</a>
+                <a href="#projects">PROJECT'S</a>
+                <a href="#interns">INTERN'S</a>
+                <a href="#certificates">CERTIFICATE'S</a>
             </div>
             <button class="nav-btn">
                 CONTACT US
@@ -30,20 +30,19 @@
             </p>
 
     </nav>
-    <section class="hero-area">
+    <section class="hero-area" id="hero-area">
            <div class="hero-left">
                  <h5>Hello I'm</h5>
                  <h1>Mr. <span>BOOPATHI VIJAYAN</span></h1>
                  <h4>UI/UX Designer and MERN-Stack Developer And Problem Solver</h4> 
                  <div class="contact-link">
                     <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-brands fa-github"></i>
-                    <i class="fa-brands fa-facebook"></i>
-
+                    <a href="https://www.linkedin.com/in/boopathi-vijayan/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/boopathi2706" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://m.facebook.com/profile.php?id=61563765625042&name=xhp_nt__fb__action__open_user"> <i class="fa-brands fa-facebook"></i></a>
                  </div>
                  <div class="hero-btns">
-                      <button class="btn-one">Download CV</button>
+                      <button class="btn-one" id="downloadBtn">Download CV</button>
                       <button class="btn-two">Visit My Wrok</button>
                  </div>          
             </div>
@@ -93,7 +92,7 @@
 
 
     <!-- about us section -->
-    <section class="about-us-section">
+    <section class="about-us-section" id="about">
            <div class="about-left">
                 <div class="about-left-one">
                      <div class="image1">
@@ -125,7 +124,7 @@
 
 <!-- skill section -->
 
-    <section class="skill-section">
+    <section class="skill-section" id="skills">
            <h1 class="skill-title">My Skill's</h1>
            <div class="skill-container">
                 <div class="skill skill-one"></div>
@@ -148,7 +147,7 @@
   
     <!-- intership section -->
 
-    <section class="intership-section">
+    <section class="intership-section" id="interns">
         <h1>Internship's</h1>
         <div class="intern-one">
             <div class="intern-one-img">
@@ -175,21 +174,85 @@
 
 
 
+<!-- project section -->
 
-
-
-
-    <section class="ui-ux-peoject-section">
-
+    <section class="peoject-section" id="projects">
+         <h1 class="project-title">Project's</h1>
+         <div class="project_container">
+            <div class="projects pro-one"><p>Event Management(UI/UX)</p></div>
+            <div class="projects pro-two"><p>Blog Platform(UI/UX)</p></div>
+            <div class="projects pro-three"><p>Drone Technology(UI/UX)</p></div>
+            <div class="projects pro-four"><p>Mario Juicy(UI/UX)</p></div>
+            <div class="projects pro-five"><p>Image Slider(Front-end)</p></div>
+            <div class="projects pro-six"><p>Super Mall(Front-end)</p></div>
+            <div class="projects pro-seven"><p>Student Track(Front-end)</p></div>
+            <div class="projects pro-eight"><p>Music Player(Front-end)</p></div>
+         </div>
+         <button class="project-btn">View More</button>
     </section>
 
-    <section class="certificate-section">
 
+
+<!-- certificate section -->
+
+    <section class="certificate-section" id="certificates">
+        <h1 class="certificate-title">certificate's</h1>
+        <div class="certificate_container">
+           <div class="certificate cert-one"><p>Winner certificate(Python/clg)</p></div>
+           <div class="certificate cert-two"><p>C programming(Infosys)</p></div>
+           <div class="certificate cert-three"><p>Python programming(Infosys)</p></div>
+           <div class="certificate cert-four"><p>C++ programming(Infosys)</p></div>
+           <div class="certificate cert-five"><p>Participation(Flipkart Contest)</p></div>
+           <div class="certificate cert-six"><p>Java programming(Udemy)</p></div>
+           <div class="certificate cert-seven"><p>Data-Structures(Udemy)</p></div>
+           <div class="certificate cert-eight"><p>Data-Structures(E-Box)</p></div>
+        </div>
+        <button class="certificate-btn">View More</button>
     </section>
 
     
     <footer class="footer-section">
+        <div class="footer-link">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-facebook"></i>
+         </div>
+         <div class="redirct">
+              <p><a href="#hero-area">Home</a></p>
+              <p>
+                <span class="material-symbols-outlined">
+                line_start_arrow_notch
+                </span>
+              </p>
+              <p><a href="#about">About</a></p>
+              <p>
+                <span class="material-symbols-outlined">
+                line_start_arrow_notch
+                </span>
+              </p>
+              <p><a href="#projects">Projects</a></p>
+              <p>
+                <span class="material-symbols-outlined">
+                line_start_arrow_notch
+                </span>
+              </p>
+              <p><a href="#interships">Internships</a></p>
+              <p>
+                <span class="material-symbols-outlined">
+                line_start_arrow_notch
+                </span>
+              </p>
+              <p><a href="#certificates">Certificates</a></p>
+              <p>
+                <span class="material-symbols-outlined">
+                line_start_arrow_notch
+                </span>
+              </p>
+              <p><a href="#">Cantact us</a></p>
 
+         </div>
+         <p class="end">&copyBOOPATHI-PORTFOLIO-2025</p>
     </footer>
     <script src="main.js"></script>
 </body>
