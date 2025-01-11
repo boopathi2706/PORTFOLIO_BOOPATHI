@@ -818,7 +818,7 @@ body{
 
 }
 .pro-one {
-    background: url("/img/project1.png");
+    background: url("./img/project1.png");
     background-position: center;
     background-size: cover;
     border: 5px solid #0DB75F;
@@ -845,7 +845,7 @@ body{
     
 }
 .pro-two{
-    background: url("/img/project2.png");
+    background: url("./img/project2.png");
     background-position: center;
     background-size: cover;
     border: 5px solid #0DB75F;
@@ -874,7 +874,7 @@ body{
 
 
 .pro-three{
-    background: url("/img/project3.png");
+    background: url("./img/project3.png");
     background-position: center;
     background-size: cover;
     border: 5px solid #0DB75F;
@@ -901,7 +901,7 @@ body{
     
 }
 .pro-four{
-    background: url("/img/project4.png");
+    background: url("./img/project4.png");
     background-position: center;
     background-size: cover;
     border: 5px solid #0DB75F;
@@ -930,7 +930,7 @@ body{
 
 
 .pro-five{
-    background: url("/img/project5.png");
+    background: url("./img/project5.png");
     background-position: center;
     background-size: cover;
     border: 5px solid #0DB75F;
@@ -959,7 +959,7 @@ body{
 
 
 .pro-six{
-    background: url("/img/project6.png");
+    background: url("./img/project6.png");
     background-position: center;
     background-size: cover;
     border: 5px solid #0DB75F;
@@ -988,7 +988,7 @@ body{
 
 
 .pro-seven{
-    background: url("/img/project7.png");
+    background: url("./img/project7.png");
     background-position: center;
     background-size: cover;
     border: 5px solid #0DB75F;
@@ -1017,7 +1017,7 @@ body{
 
 
 .pro-eight{
-    background: url("/img/project8.png");
+    background: url("./img/project8.png");
     background-position: center;
     background-size: cover;
     border: 5px solid #0DB75F;
@@ -1121,7 +1121,7 @@ body{
 
 }
 .cert-one {
-    background: url("/img/certi1.png");
+    background: url("./img/certi1.png");
     background-position: center;
     background-size: cover;
     border: 5px solid #0DB75F;
@@ -1149,7 +1149,7 @@ body{
 }
 
 .cert-two {
-    background: url("/img/certi2.png");
+    background: url("./img/certi2.png");
     background-position: center;
     background-size: cover;
     border: 5px solid #0DB75F;
@@ -1177,7 +1177,7 @@ body{
 }
 
 .cert-three{
-    background: url("/img/certi3.png");
+    background: url("./img/certi3.png");
     background-position: center;
     background-size: cover;
     border: 5px solid #0DB75F;
@@ -1204,7 +1204,7 @@ body{
     
 }
 .cert-four{
-    background: url("/img/certi4.png");
+    background: url("./img/certi4.png");
     background-position: center;
     background-size: cover;
     border: 5px solid #0DB75F;
@@ -1233,7 +1233,7 @@ body{
 
 
 .cert-five{
-    background: url("/img/certi5.png");
+    background: url("./img/certi5.png");
     background-position: center;
     background-size: cover;
     border: 5px solid #0DB75F;
@@ -1262,7 +1262,7 @@ body{
 
 
 .cert-six{
-    background: url("/img/certi6.png");
+    background: url("./img/certi6.png");
     background-position: center;
     background-size: cover;
     border: 5px solid #0DB75F;
@@ -1291,7 +1291,7 @@ body{
 
 
 .cert-seven{
-    background: url("/img/certi7.png");
+    background: url("./img/certi7.png");
     background-position: center;
     background-size: cover;
     border: 5px solid #0DB75F;
@@ -1320,7 +1320,7 @@ body{
 
 
 .cert-eight{
-    background: url("/img/certi8.png");
+    background: url("./img/certi8.png");
     background-position: center;
     background-size: cover;
     border: 5px solid #0DB75F;
