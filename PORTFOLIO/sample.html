@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+      
+    /* General Styles */
+    body {
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(135deg, #3aff99, #0DB75F);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        color: #fff;
+    }
+
+    form {
+        background-color: rgb(255, 255, 255);
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        padding: 20px 30px;
+        max-width: 400px;
+        width: 100%;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+        font-size: 14px;
+        color: #2E2F2E;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 95%;
+        padding: 10px 15px;
+        margin-bottom: 15px;
+        border: 1px solid #2E2F2E;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0);
+        color: #2E2F2E;
+        font-size: 14px;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    input:focus,
+    textarea:focus {
+        border-color: #6a11cb;
+        outline: none;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    button {
+        background: linear-gradient(135deg, #6a11cb, #2575fc);
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        width: 100%;
+    }
+
+    button:hover {
+        background: linear-gradient(135deg, #2575fc, #6a11cb);
+    }
+   .back{
+    width: 10%;
+    height: 7%;
+    margin-top: 2%;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);;
+   }
+   .back a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    
+   }
+   .back:hover{
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+   }
+    /* Media Queries */
+    @media (max-width: 480px) {
+        form {
+            padding: 15px 20px;
+        }
+
+        button {
+            font-size: 14px;
+        }
+    }
+</style>
+
+    </style>
+    <!-- Add EmailJS Script -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js" > </script>
+    <script type="text/javascript">
+      (function() {
+      emailjs.init("FdQZms1GN-W_2tByy");
+      })(); 
+
+</script>
+
+<!-- Contact Form -->
+<form id="contactForm">
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+    <label for="email">Your Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <label for="message">Your Message:</label>
+    <textarea id="message" name="message" placeholder="Write your message here..." rows="5" required></textarea>
+
+    <button onclick="sendemail()">Send Email</button>
+</form>
+ <button class="back">
+    <a href="../index.html">Back to Home</a>
+ </button>
+
+<script>
+    function sendemail() {
+   
+    if (from_email && from_name && message) {
+var email=document.getElementById("email").value;
+var from_name=document.getElementById("name").value;
+var message=document.getElementById("message").value;
+
+var templateParams = {
+    email: email,
+    name: from_name,
+    message: message
+  };
+
+  emailjs.send('service_pebxnna', 'template_3c8vefd', templateParams)
+.then(function(response) {
+ console.log('SUCCESS!', response.status, response.text);
+ window.alert("Sent successfully!");
+ 
+})
+
+ 
+}
+else {
+        // Alert user if any field is empty
+        alert("Please fill out all fields before submitting.");
+    }
+}
+
+
+</script>
+
+</body>
+</html>

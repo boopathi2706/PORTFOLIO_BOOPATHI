@@ -45,7 +45,7 @@ function toggleIcon(element) {
 
 document.getElementById('downloadBtn').addEventListener('click', () => {
     const link = document.createElement('a');
-    link.href = './img/BOOPATHI_V(RESUME).pdf'; // Replace with your PDF file path
+    link.href = './PORTFOLIO/img/BOOPATHI_V(RESUME).pdf'; // Replace with your PDF file path
     link.download = 'BOOPATHI_VIJAYAN(RESUME).pdf'; // Optional: set the file name
     document.body.appendChild(link);
     link.click();
