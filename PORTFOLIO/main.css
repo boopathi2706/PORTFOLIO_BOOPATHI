@@ -8,11 +8,20 @@
 html {
     scroll-behavior: smooth;
 }
-
+:root{
+    --color:#0DB75F;
+    --change-color:#2E2F2E;
+    --change-color-1:white;
+    --line-1:#2e2f2e17;
+    --line-2:#fafdfa7f;
+    /* --showdow-1:#e1f7f0;
+    --showdow-2: */
+}
 body{
     height:600vh;
     display: flex;
     flex-direction: column;
+    background-color: var(--change-color-1);
 }
 
 /* nav bar section */
@@ -24,7 +33,7 @@ body{
     padding: 10px 20px;
     align-items: center;
     justify-content: space-around;
-    border-bottom: 0.5px solid #2e2f2e17;
+    border-bottom: 0.5px solid var(--line-1);
     position: sticky;
     top: 0;
     z-index: 1;
@@ -36,7 +45,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    color: #0DB75F;
+    color:var(--color);
     font-weight:900;
 
 }
@@ -55,16 +64,16 @@ body{
 .nav-link a{
     text-decoration: none;
     font-size: 99%;
-    color:#2E2F2E;
+    color:var(--change-color);
     padding: 10px 15px;
     transition: 0.45s ease-in;
     
 }
 .nav-link a:hover{
-    background-color: #0DB75F;
+    background-color: var(--color);
     border-radius: 5px;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.378);
-    color: white;
+    box-shadow: 1px 1px 2px var(--line-1);
+    color:var(--change-color-1);
     font-weight: 600;
 }
 .nav-btn{
@@ -72,26 +81,29 @@ body{
     height: 70%;
     border: 2px solid #0DB75F;
     border-radius:5px;
+    background-color: var(--change-color-1);
 }
 .nav-btn:hover{
     cursor: pointer;
-    background-color: #0DB75F;
-    color: white;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.362);
+    background-color:var(--color);
+    color:var(--change-color-1);
+    box-shadow: 1px 1px 2px var(--line-1);
     transition: 0.50s ease-in-out;
     font-weight: 900;
 }
 .nav-btn a {
     text-decoration: none;
-    color: #2E2F2E;
+    color:var(--change-color);
     font-size: 1rem;
+    
 }
 .nav-btn:hover a{
-    color: white;
+    color:var(--change-color-1);
 }
 .brightness{
     cursor: pointer;
     font-size: 1rem;
+    color: var(--change-color);
 }
 
 /* personal information section */
@@ -114,17 +126,18 @@ body{
     justify-content: space-between;
 }
 .hero-left h5{
-    color: #0DB75F;
+    color:var(--color);
     font-weight: 900;
 }
 .hero-left h1 span{
-    color: #0DB75F;
+    color:var(--color);
 }
 .hero-left h1{
     font-size: 2.8rem;
+    color: var(--change-color);
 }
 .hero-left h4{
-    color:#2E2F2E;
+    color:var(--change-color);
 }
 .contact-link{
      display: flex;
@@ -136,14 +149,14 @@ body{
 }
 .contact-link i{
     font-size: 1.5rem;
-    color: #2E2F2E;
+    color: var(--change-color);
     
 }
 .contact-link i:hover{
     cursor: pointer;
-    color: #0DB75F;
+    color: var(--color);
     transition: 0.45s ease-in-out;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.256);
+    text-shadow: 1px 1px 2px var(--line-1);
 }
 .hero-btns{
     width: 50%;
@@ -157,31 +170,32 @@ body{
 .hero-btns button{
     width: 45%;
     height: 90%;
-    border: 2px solid #0DB75F;
+    border: 2px solid var(--color);
     border-radius: 5px;
     font-size: 0.9rem;
     cursor: pointer;
 }
 .btn-one{
-     background-color: #0DB75F;
-     color: white;
+     background-color: var(--color);
+     color: var(--change-color-1);
      font-weight: 600;
      box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.281);
 }
 .btn-one:hover{
-    background-color: white;
-    color: #2E2F2E;
-    border: 2px solid #0DB75F;
+    background-color: var(--change-color-1);
+    color:var(--change-color);
+    border: 2px solid var(--color);
     transition: 0.45s ease-in-out;
 }
 .btn-two{
-    color: #2E2F2E;
+    color: var(--change-color);
     font-weight: 600;
+    background-color: var(--change-color-1);
 }
 .btn-two:hover{
-    background-color: #0DB75F;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.281);
-    color:white;
+    background-color: var(--color);
+    box-shadow: 1px 1px 2px var(--line-1);
+    color:var(--change-color-1);
     transition: 0.45s ease-in-out;
 }
 .hero-right{
@@ -195,7 +209,7 @@ body{
 .inner-box{
     width: 65%;
     height: 80%;
-    background-color: #0DB75F;
+    background-color:var(--color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -216,7 +230,7 @@ body{
     width: 65%;
     height: 80%;
     border:10px double #1b0db7;
-    box-shadow: 2px 2px 4px 6px #2e2f2e4e;
+    box-shadow: 2px 2px 4px 6px var(--line-1);
     animation: circle 11s infinite;
 }
 .outer-in-box{
@@ -224,7 +238,7 @@ body{
     width: 65%;
     height: 80%;
     border:10px double #b70dac;
-    box-shadow: 2px 2px 4px 6px #2e2f2e4e;
+    box-shadow: 2px 2px 4px 6px var(--line-1);
     animation: circle 17s infinite;
 }
 
@@ -258,7 +272,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-right: 1px solid #2e2f2e40;
+    border-right: 1px solid var(--line-1);
 }
 
 .ui-ux-project-count{
@@ -268,7 +282,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-right: 1px solid #2e2f2e40;
+    border-right: 1px solid var(--line-1);
 }
 .certificate-count{
     width:15%;
@@ -277,7 +291,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-right: 1px solid #2e2f2e40;
+    border-right: 1px solid var(--line-1);
 }
 .intern-count{
     width:15%;
@@ -289,10 +303,10 @@ body{
 }
 .count-section h2{
       font-size: 2rem;
-      color:#0DB75F;
+      color:var(--color);
 }
 .count-section h4{
-    color: #2E2F2E;
+    color: var(--change-color);
 }
 
 
@@ -320,7 +334,7 @@ body{
 .about-left-one{
     columns: 1;
     grid-row:span 5;
-    background:linear-gradient(#0db721,#4cc9ef,#0DB75F);
+    background:linear-gradient(#0db721,#4cc9ef,var(--color));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -338,7 +352,7 @@ body{
 .about-left-two{
     columns: 2;
     grid-row:span 3;
-    background:linear-gradient(#0db721,#4cc9ef,#0DB75F);
+    background:linear-gradient(#0db721,#4cc9ef,var(--color));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -356,7 +370,7 @@ body{
 .about-left-three{
     columns: 2;
     grid-row:span 2;
-    background:linear-gradient(#0db721,#4cc9ef,#0DB75F);
+    background:linear-gradient(#0db721,#4cc9ef,var(--color));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -439,12 +453,12 @@ body{
   }
 
 .about-title{
-    color: #0DB75F;
+    color: var(--color);
     font-weight: 600;
 }
 .about-paragraph{
     width: 30vw;
-    color: #2E2F2E;
+    color: var(--change-color);
     text-align: justify;
 }
 .about-btn{
@@ -452,16 +466,16 @@ body{
     height: 10%;
     font-size: 1rem;
     border-radius: 5px;
-    background-color: #0DB75F;
-    color: white;
+    background-color: var(--color);
+    color: var(--change-color-1);
     border: none;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.247);
 }
 
 .about-btn:hover{
-    border: 3px solid #0DB75F;
-    background-color: white;
-    color: #2E2F2E;
+    border: 3px solid var(--color);
+    background-color: var(--change-color-1);
+    color: var(--change-color);
 }
 
 
@@ -479,8 +493,8 @@ body{
 .skill-title{
     height: 7%;
     text-align: center;
-    color: #2E2F2E;
-    color: #0DB75F;
+    color: var(--change-color);
+    color: var(--color);
     font-size: 2rem;
 }
 .skill-section:hover .skill-title{
@@ -628,16 +642,16 @@ body{
     height: 8%;
     font-size: 1.2rem;
     border: none;
-    background-color: #0DB75F;
+    background-color: var(--color);
     border-radius: 5px;
     font-weight: 500;
-    color: white;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.255);
+    color: var(--chnage-color-1);
+    box-shadow: 1px 1px 2px var(--line-1);
 }
 .skill-button:hover{
-    border: 3px solid #0DB75F;
-    background-color: white;
-    color:#2E2F2E;
+    border: 3px solid var(--color);
+    background-color:var(--change-color-1);
+    color:var(--change-color);
     transition: 0.45s ease-in-out;
 }
 
@@ -666,25 +680,25 @@ body{
     padding: 1%;
 }
 .intership-section h1{
-    color: #0DB75F;
+    color: var(--color);
     font-size: 1.7rem;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.195);
+    text-shadow: 1px 1px 1px var(--line-1);
 }
 .intern-btn{
     width: 10%;
     height: 10%;
-    background-color: #0DB75F;
+    background-color:var(--color);
     border: none;
-    color: white;
+    color: var(--change-color-1);
     font-size: 1.2rem;
     border-radius: 5px;
     font-weight: 600;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.208);
+    box-shadow: 1px 1px 2px var(--line-1);
 }
 .intern-btn:hover{
-        border: 3px solid #0DB75F;
-        background-color: white;
-        color:#2E2F2E;
+        border: 3px solid var(--color);
+        background-color:var(--change-color-1);
+        color:var(--change-color);
         transition: 0.50s ease-in-out;
     
 }
@@ -695,7 +709,7 @@ body{
     background-position: center;
     background-size: cover;
     border-radius: 5px;
-    border: 10px solid #0DB75F;
+    border: 10px solid var(--color);
     
 }
 .intership-section:hover .intern-one-img{
@@ -717,6 +731,7 @@ body{
     width: 50%;
     height: 95%;
     text-align: center;
+    color: var(--change-color);
 }
 
 .intern-two{
@@ -736,18 +751,19 @@ body{
     background-position: center;
     background-size: cover;
     border-radius: 5px;
-    border: 10px solid #0DB75F;
+    border: 10px solid var(--color);
 }
 .intern-two-paragraph{
     width: 50%;
     height: 95%;
     text-align: center;
+    color: var(--change-color);
 }
 .intern-one-paragraph span{
-    color: #0DB75F;
+    color: var(--color);
 }
 .intern-two-paragraph span{
-    color: #0DB75F;
+    color: var(--color);
 }
 
 @keyframes about_move1{
@@ -787,7 +803,7 @@ body{
     justify-content: space-around;
 }
 .project-title{
-    color: #0DB75F;
+    color: var(--color);
     font-size: 1.7rem;
 }
 .peoject-section:hover .project-title{
@@ -812,16 +828,16 @@ body{
     width:10%;
     height: 8%;
     border: none;
-    background-color: #0DB75F;
+    background-color: var(--color);
     border-radius: 5px;
     font-size: 1.2rem;
-    color: white;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.263);
+    color:var(--change-color-1);
+    box-shadow: 1px 1px 2px var(--line-1);
 }
 .project-btn:hover{
-    border: 3px solid #0DB75F;
-    background-color: white;
-    color:#2E2F2E;
+    border: 3px solid var(--color);
+    background-color:var(--change-color-1);
+    color:var(--change-color);
     transition: 0.50s ease-in-out;
 
 }
@@ -829,7 +845,7 @@ body{
     background: url("./img/project1.png");
     background-position: center;
     background-size: cover;
-    border: 5px solid #0DB75F;
+    border: 5px solid var(--color);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -844,8 +860,8 @@ body{
 }
 
 .pro-one:hover p{
-    background-color: #0DB75F;
-    color: white;
+    background-color: var(--color);
+    color:var(--change-color-1);
     padding: 7px 15px;
     opacity: 1;
     border-radius: 5px;
@@ -856,7 +872,7 @@ body{
     background: url("./img/project2.png");
     background-position: center;
     background-size: cover;
-    border: 5px solid #0DB75F;
+    border: 5px solid var(--color);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -871,8 +887,8 @@ body{
 }
 
 .pro-two:hover p{
-    background-color: #0DB75F;
-    color: white;
+    background-color: var(--color);
+    color:var(--change-color-1);
     padding: 7px 15px;
     opacity: 1;
     border-radius: 5px;
@@ -885,7 +901,7 @@ body{
     background: url("./img/project3.png");
     background-position: center;
     background-size: cover;
-    border: 5px solid #0DB75F;
+    border: 5px solid var(--color);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -900,8 +916,8 @@ body{
 }
 
 .pro-three:hover p{
-    background-color: #0DB75F;
-    color: white;
+    background-color: var(--color);
+    color:var(--change-color-1);
     padding: 7px 15px;
     opacity: 1;
     border-radius: 5px;
@@ -912,7 +928,7 @@ body{
     background: url("./img/project4.png");
     background-position: center;
     background-size: cover;
-    border: 5px solid #0DB75F;
+    border: 5px solid var(--color);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -927,8 +943,8 @@ body{
 }
 
 .pro-four:hover p{
-    background-color: #0DB75F;
-    color: white;
+    background-color: var(--color);
+    color:var(--change-color-1);
     padding: 7px 15px;
     opacity: 1;
     border-radius: 5px;
@@ -941,7 +957,7 @@ body{
     background: url("./img/project5.png");
     background-position: center;
     background-size: cover;
-    border: 5px solid #0DB75F;
+    border: 5px solid var(--color);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -956,8 +972,8 @@ body{
 }
 
 .pro-five:hover p{
-    background-color: #0DB75F;
-    color: white;
+    background-color: var(--color);
+    color:var(--change-color-1);
     padding: 7px 15px;
     opacity: 1;
     border-radius: 5px;
@@ -970,7 +986,7 @@ body{
     background: url("./img/project6.png");
     background-position: center;
     background-size: cover;
-    border: 5px solid #0DB75F;
+    border: 5px solid var(--color);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -985,8 +1001,8 @@ body{
 }
 
 .pro-six:hover p{
-    background-color: #0DB75F;
-    color: white;
+    background-color: var(--color);
+    color:var(--change-color-1);
     padding: 7px 15px;
     opacity: 1;
     border-radius: 5px;
@@ -999,7 +1015,7 @@ body{
     background: url("./img/project7.png");
     background-position: center;
     background-size: cover;
-    border: 5px solid #0DB75F;
+    border: 5px solid var(--color);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1014,8 +1030,8 @@ body{
 }
 
 .pro-seven:hover p{
-    background-color: #0DB75F;
-    color: white;
+    background-color: var(--color);
+    color: var(--change-color-1);
     padding: 7px 15px;
     opacity: 1;
     border-radius: 5px;
@@ -1028,7 +1044,7 @@ body{
     background: url("./img/project8.png");
     background-position: center;
     background-size: cover;
-    border: 5px solid #0DB75F;
+    border: 5px solid var(--color);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1044,8 +1060,8 @@ body{
 }
 
 .pro-eight:hover p{
-    background-color: #0DB75F;
-    color: white;
+    background-color: var(--color);
+    color:var(--change-color-1);
     padding: 7px 15px;
     opacity: 1;
     border-radius: 5px;
@@ -1090,7 +1106,7 @@ body{
     justify-content: space-around;
 }
 .certificate-title{
-    color: #0DB75F;
+    color: var(--color);
     font-size: 1.7rem;
 }
 .certificate-section:hover .certificate-title{
@@ -1115,16 +1131,16 @@ body{
     width:10%;
     height: 8%;
     border: none;
-    background-color: #0DB75F;
+    background-color: var(--color);
     border-radius: 5px;
     font-size: 1.2rem;
-    color: white;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.263);
+    color:var(--change-color-1);
+    box-shadow: 1px 1px 2px var(--line-1);
 }
 .certificate-btn:hover{
-    border: 3px solid #0DB75F;
-    background-color: white;
-    color:#2E2F2E;
+    border: 3px solid var(--color);
+    background-color:var(--change-color-1);
+    color:var(--change-color);
     transition: 0.50s ease-in-out;
 
 }
@@ -1132,7 +1148,7 @@ body{
     background: url("./img/certi1.png");
     background-position: center;
     background-size: cover;
-    border: 5px solid #0DB75F;
+    border: 5px solid var(--color);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1144,11 +1160,12 @@ body{
 }
 .cert-one p{
     opacity: 0;
+    color: var(--change-color);
 }
 
 .cert-one:hover p{
-    background-color: #0DB75F;
-    color: white;
+    background-color: var(--color);
+    color:var(--change-color);
     padding: 7px 15px;
     opacity: 1;
     border-radius: 5px;
@@ -1160,7 +1177,7 @@ body{
     background: url("./img/certi2.png");
     background-position: center;
     background-size: cover;
-    border: 5px solid #0DB75F;
+    border: 5px solid var(--color);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1175,8 +1192,8 @@ body{
 }
 
 .cert-two:hover p{
-    background-color: #0DB75F;
-    color: white;
+    background-color: var(--color);
+    color:var(--change-color);
     padding: 7px 15px;
     opacity: 1;
     border-radius: 5px;
@@ -1188,7 +1205,7 @@ body{
     background: url("./img/certi3.png");
     background-position: center;
     background-size: cover;
-    border: 5px solid #0DB75F;
+    border: 5px solid var(--color);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1200,11 +1217,12 @@ body{
 }
 .cert-three p{
     opacity: 0;
+    color: var(--change-color);
 }
 
 .cert-three:hover p{
-    background-color: #0DB75F;
-    color: white;
+    background-color: var(--color);
+    color:var(--chnage-color-1);
     padding: 7px 15px;
     opacity: 1;
     border-radius: 5px;
@@ -1215,7 +1233,7 @@ body{
     background: url("./img/certi4.png");
     background-position: center;
     background-size: cover;
-    border: 5px solid #0DB75F;
+    border: 5px solid var(--color);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1227,11 +1245,12 @@ body{
 }
 .cert-four p{
     opacity: 0;
+    color: var(--change-color);
 }
 
 .cert-four:hover p{
-    background-color: #0DB75F;
-    color: white;
+    background-color: var(--color);
+    color:var(--chnage-color-1);
     padding: 7px 15px;
     opacity: 1;
     border-radius: 5px;
@@ -1244,7 +1263,7 @@ body{
     background: url("./img/certi5.png");
     background-position: center;
     background-size: cover;
-    border: 5px solid #0DB75F;
+    border: 5px solid var(--color);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1256,11 +1275,12 @@ body{
 }
 .cert-five p{
     opacity: 0;
+    color: var(--change-color);
 }
 
 .cert-five:hover p{
-    background-color: #0DB75F;
-    color: white;
+    background-color: var(--color);
+    color:var(--chnage-color-1);
     padding: 7px 15px;
     opacity: 1;
     border-radius: 5px;
@@ -1273,7 +1293,7 @@ body{
     background: url("./img/certi6.png");
     background-position: center;
     background-size: cover;
-    border: 5px solid #0DB75F;
+    border: 5px solid var(--color);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1285,11 +1305,12 @@ body{
 }
 .cert-six p{
     opacity: 0;
+    color: var(--change-color);
 }
 
 .cert-six:hover p{
-    background-color: #0DB75F;
-    color: white;
+    background-color: var(--color);
+    color:var(--chnage-color-1);
     padding: 7px 15px;
     opacity: 1;
     border-radius: 5px;
@@ -1302,7 +1323,7 @@ body{
     background: url("./img/certi7.png");
     background-position: center;
     background-size: cover;
-    border: 5px solid #0DB75F;
+    border: 5px solid var(--color);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1314,11 +1335,12 @@ body{
 }
 .cert-seven p{
     opacity: 0;
+    color: var(--change-color);
 }
 
 .cert-seven:hover p{
-    background-color: #0DB75F;
-    color: white;
+    background-color: var(--color);
+    color:var(--chnage-color-1);
     padding: 7px 15px;
     opacity: 1;
     border-radius: 5px;
@@ -1331,7 +1353,7 @@ body{
     background: url("./img/certi8.png");
     background-position: center;
     background-size: cover;
-    border: 5px solid #0DB75F;
+    border: 5px solid var(--color);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1344,11 +1366,12 @@ body{
 }
 .cert-eight p{
     opacity: 0;
+    color: var(--change-color);
 }
 
 .cert-eight:hover p{
-    background-color: #0DB75F;
-    color: white;
+    background-color:var(--color);
+    color:var(--chnage-color-1);
     padding: 7px 15px;
     opacity: 1;
     border-radius: 5px;
@@ -1378,13 +1401,7 @@ body{
 
 
 
-
-
-
-
-
-
-
+/* footer section  */
 
 
 .footer-section{
@@ -1392,7 +1409,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #0DB75F;
+    background-color: var(--color);
     justify-content: center;
 
 }
@@ -1405,11 +1422,16 @@ body{
     justify-content: center;
     gap: 2%;
 }
-.footer-link i{
-   font-size: 1.6rem;
+.footer-link a{
+    text-decoration: none;
+    color:var(--change-color-1);
 }
-.footer-link i:hover{
-    color: white;
+.footer-link a i{
+   font-size: 1.6rem;
+   color:var(--change-color);
+}
+.footer-link a i:hover{
+    color:var(--chnage-color-1);
     transition: 0.45s ease-in-out;
     cursor: pointer;
 }
@@ -1422,15 +1444,15 @@ body{
 .redirct p a{
     text-decoration: none;
     font-size: 1.2rem;
-    color: #2E2F2E;
+    color:var(--change-color);
 }
 .redirct p a:hover{
-    color: white;
+    color:var(--chnage-color-1);
     transition: 0.45s ease-in-out;
 }
 .redirct p span{
-    color:#2E2F2E ;
+    color:var(--change-color) ;
 }
 .end{
-    color: #2E2F2E;
+    color:var(--change-color);
 }
